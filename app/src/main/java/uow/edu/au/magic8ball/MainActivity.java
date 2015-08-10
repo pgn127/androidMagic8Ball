@@ -19,6 +19,7 @@ public class MainActivity extends ActionBarActivity {
         Log.i("info", "" + 20.00);
         String name = "Pamela Needle";
         Log.i("info", name);
+        //
 
         ArrayList<String> initialResponses = new ArrayList<String>();
         initialResponses.add("Obviously.");
