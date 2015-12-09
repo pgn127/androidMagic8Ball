@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">magica bola ocho</string>
+    <string name="forsure">por supuesto!</string>
+    <string name="hello_world">hola mundo!</string>
+    <string name="mayb">puede ser</string>
+    <string name="mostdef">definitivamente</string>
+    <string name="notachance">de ninguna manera</string>
+    <string name="title_activity_history">actividad de la historia</string>
+    <string name="yeahright">si a la derecha</string>
+    <string name="action_settings">ajustes</string>
+    <string name="history">historia</string>
+    <string name="askques">haz una pregunta</string>
+    <string name="letsbegin">empecemos</string>
+</resources>

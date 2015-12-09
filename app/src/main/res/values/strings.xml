@@ -1,6 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Magic 8 Ball</string>
-
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="forsure">For sure!</string>
+    <string name="mayb">Maybe</string>
+    <string name="mostdef">Most definitely</string>
+    <string name="notachance">Not a chance</string>
+    <string name="yeahright">Yeah right!</string>
+    <string name="history">History</string>
+    <string name="askques">Ask a question</string>
+    <string name="letsbegin">Lets begin</string>
 </resources>

@@ -1,4 +1,6 @@
 package uow.edu.au.magic8ball;
+import android.content.Context;
+import android.content.res.Resources;
 import android.util.Log;
 
 import java.util.ArrayList;
@@ -10,16 +12,26 @@ import java.util.Random;
 public class MagicEightBallModel extends Object {
 
     private static ArrayList<String> defaultResponseArray;
-
     private ArrayList<String> responseArray;
+    private String[] soundStrings = {"maforsure.mp3","mamaybe.mp3","mamostdefinitely.mp3","manotachance.mp3","mayeahright.mp3"};
+    private int currentSoundIndex;
+
+
 
     public MagicEightBallModel() {
         //default string response added to the defualtResponseArray
-        this.defaultResponseArray = new ArrayList<String>();
-        this.defaultResponseArray.add("The answer to your question is no way!");
+        ;
+//        this.defaultResponseArray = new ArrayList<String>();
+//        this.defaultResponseArray.add(getResources().getString(android.R.string.forsure));
+//        this.defaultResponseArray.add("Maybe");
+//        this.defaultResponseArray.add("Most definitely");
+//        this.defaultResponseArray.add("Not a chance");
+        //this.defaultResponseArray.add("No");
+
 
         //create new default response array object
-        this.responseArray = new ArrayList<String>(defaultResponseArray);
+        this.responseArray = new ArrayList<String>();
+
     }
 
     public MagicEightBallModel(ArrayList<String> initialResponseArray) {
@@ -31,7 +43,12 @@ public class MagicEightBallModel extends Object {
     public String getRandomResponse() {
         Random rn = new Random();
         int size = responseArray.size();
-        return responseArray.get(rn.nextInt(size));
+        currentSoundIndex = rn.nextInt(size);
+        return responseArray.get(currentSoundIndex);
+    }
+
+    public String getCurrentSoundString(){
+        return soundStrings[currentSoundIndex];
     }
 
     public String toString() {
